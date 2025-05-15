@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Automotores</title>
+      <link rel="stylesheet" href="RGB Automotores.css">
+</head>
+
+<body>
+<h1>RGB Automotores</h1>
+
+  <h2>Listado de modelos de autos registrados</h2>
+  <table id="TablaModelos">
+    <thead>
+      <tr>
+        <th class="Encabezado">Marca</th>
+        <th class="Encabezado">Modelo</th>
+        <th class="Encabezado">Año</th>
+        <th class="Encabezado">Color</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+
+  <form id="formularioAutomotor">
+    <label for="input_Marca">Marca:</label>
+    <input type="text" id="input_Marca" required>
+
+    <label for="input_Modelo">Modelo:</label>
+    <input type="text" id="input_Modelo" required>
+
+    <label for="input_Year">Año:</label>
+    <input type="number" id="input_Year" min="1886" required>
+
+    <label for="input_Color">Color:</label>
+    <select id="input_Color" required>
+      <option value="Rojo">Rojo</option>
+      <option value="Verde">Verde</option>
+      <option value="Azul">Azul</option>
+    </select>
+
+    <button id="Boton_Agregar">Agregar</button>
+  </form>
+
+    <h2 class="error" id="mensajeError"></h2>
+    <script src="RGB Automotores.js"></script>
+</body>
+
+
+</html>
