@@ -1,5 +1,5 @@
 
-const formulario = document.getElementById("formularioEmpleado");
+const formulario = document.getElementById("formularioAutomotor");
 const tabla = document.getElementById("TablaModelos").querySelector("tbody");
 const botonAgregar= document.getElementById("Boton_Agregar");
 const mensajeError = document.getElementById("mensajeError");
@@ -25,7 +25,7 @@ function BotonConfirmar() {
     <td>${valor_marca}</td>
     <td>${valor_modelo}</td>
     <td>${valor_year}</td>
-    <td class=".Fondo_${valor_color}:hover"> ${valor_color}</td>
+    <td class="Fondo_${valor_color}"> ${valor_color}</td>
   `;
   tabla.appendChild(fila);
 
